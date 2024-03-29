@@ -1,0 +1,387 @@
+@font-face {
+    font-family: 'my_quicksand';
+    src: url('../fonts/quicksand-regular-webfont.woff2') format('woff2'),
+         url('../fonts/quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'my_quicksand_bold';
+    src: url('../fonts/quicksand-bold-webfont.woff2') format('woff2'),
+         url('../fonts/quicksand-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'my_futura';
+    src: url('../fonts/futurastd-medium-webfont.woff2') format('woff2'),
+         url('../fonts/futurastd-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.container {
+	width: 978px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: my_quicksand;
+	font-size: 16px;
+}
+
+/*Some sort of scroll without knowing javascript*/
+html{
+	scroll-behavior: smooth;
+}
+
+header{
+	height: 60px;
+	width: 100%;
+	background-color: #5d7074;
+	color: white;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 25%);
+}
+
+.flexparent{
+	display: flex;
+}
+
+.feature{
+	height: 600px;
+	width: 100%;
+	background-image: url(../images/hero3.jpg);
+	background-size: 100%;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.identity{
+	margin-left: 168px;
+	padding-top: 150px;
+}
+
+
+h1{
+	padding-top: 15px;
+	font-size: 70px;
+	font-family: my_futura;
+	line-height: 90px;
+}
+
+h2{
+	margin-right: auto;
+	font-size: 24px;
+	padding-top: 15px;
+	
+}
+
+h3{
+	font-size: 30px;
+	
+}
+
+.identity h4{
+	padding-top: 10px;
+	font-size: 48px;
+	font-family: my_futura;
+	margin-bottom: 30px;
+}
+
+
+nav{
+	padding-top: 20px;
+}
+
+.circle{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	margin-right: 30px;
+	background-color: white;
+	transition: color 1s, 350ms;
+}
+
+.circle:nth-of-type(10){
+	margin-right: 0px;
+}
+
+
+.cta{
+	width: 120px;
+	height: 32px;
+	border-radius: 7px;
+	background-color: #5d7074;
+}
+
+.cta p{
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding-top: 8px;
+}
+
+.cta a{
+	color: white;
+	text-decoration: none;
+	transition: color 1s, 350ms;
+}
+
+
+
+/*Content*/
+
+.ramsInfo{
+	width: 474px;
+	font-size: 18px;
+	margin-left: 168px;
+	line-height: 24px;
+	padding-top: 150px;
+}
+
+.ramsInfo span{
+	font-size: 24px;
+	font-family: my_quicksand_bold;
+}
+
+.ramsInfo:nth-of-type(2){
+	padding-top: 50px;
+	margin-bottom: 50px;
+}
+
+
+
+/*Principle Groups*/
+
+.leftGroup{
+	display: flex;
+	margin-bottom: 130px;
+	padding-top: 200px;
+}
+
+.rightGroup{
+	display: flex;
+	margin-left: 168px;
+	margin-bottom: 130px;
+	padding-top: 200px;
+}
+
+#example10{
+	margin-bottom: 250px;
+}
+
+.groupPic{
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+.blueBox{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 306px;
+	height: 306px;
+	background-color: #cedfdf;
+}
+
+
+/*images*/
+
+.example1,
+.example2,
+.example3,
+.example4,
+.example5,
+.example6,
+.example7,
+.example8,
+.example9,
+.example10{
+	position: absolute;
+	width: 306px;
+	height: 306px;
+	top: 84px;
+	left: 84px;
+	transition: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.25);
+}
+
+.example1{
+	background-image: url(../images/innovative.jpg);
+}
+
+.example2 {
+	background-image: url(../images/useful2.jpg);
+}
+
+.example3 {
+	background-image: url(../images/aesthetic.jpg);
+}
+
+.example4 {
+	background-image: url(../images/understandable.jpg);
+}
+
+.example5 {
+	background-image: url(../images/unobtrusive3.jpg);
+}
+
+.example6 {
+	background-image: url(../images/honest.jpg);
+}
+
+.example7 {
+	background-image: url(../images/longlasting2.jpg);
+}
+
+.example8 {
+	background-image: url(../images/thorough2.jpg);
+}
+
+.example9 {
+	background-image: url(../images/enviro.jpg);
+}
+
+.example10 {
+	background-image: url(../images/reductive.jpg);
+}
+
+.hoverBox{
+	height: 100%;
+	background-color: #5d7074;
+	opacity: 0;
+	transition: opacity 500ms;
+}
+
+
+.princText h4{
+	margin-top: -3px;
+	font-size: 48px;
+	letter-spacing: 3px;
+	font-family: my_futura;
+	margin-bottom: 35px;
+}
+
+.princText{
+	margin-left: 30px;
+}
+
+.princText p{
+	width: 390px;
+	line-height: 20px;
+	margin-left: 84px;
+}
+
+
+.quote{
+	text-align: center;
+	font-family: my_quicksand;
+	font-size: 30px;
+	margin-bottom: 200px;
+}
+
+
+
+/*Footer*/
+
+.footer{
+	height: 450px;
+	background-color: #5d7074;
+	color: white;
+}
+
+.footerText{
+	padding-top: 64px;
+	display: flex;
+}
+
+.footer h2{
+	width: 474px;
+	margin-right: 114px;
+	padding-top: 80px;
+}
+
+.footerText h3{
+	font-size: 16px;
+	font-family: my_quicksand_bold;
+	margin-bottom: 30px;
+}
+
+.footerText li{
+	line-height: 30px;
+}
+
+.footerText a{
+	display: block;
+	color: white;
+	line-height: 30px;
+	text-decoration: none;
+}
+
+.resList{
+	display: flex;
+}
+
+
+.resList2{
+	margin-left: 30px;
+}
+
+.contact{
+	position: absolute;
+	margin-left: 474px;
+}
+
+.socials{
+	position: absolute;
+	margin-left: 810px;
+}
+
+
+
+/*actions*/
+
+.circle:hover{
+	background-color: #29373a;
+	transition: color 250ms, 350ms;
+	box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.50);
+}
+
+.cta a:hover{
+	color: black;
+	transition: color 250ms, 350ms;
+}
+
+.hoverBox:hover{
+	opacity: .5;
+	transition: opacity 250ms;
+}
+
+.example1:hover,
+.example2:hover,
+.example3:hover,
+.example4:hover,
+.example5:hover,
+.example6:hover,
+.example7:hover,
+.example8:hover,
+.example9:hover,
+.exmaple10:hover{
+	box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.50);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.footerText a:hover{
+	color: black;
+	transition: color 250ms, 350ms;
+}
